@@ -10,6 +10,8 @@ import androidx.compose.material3.dynamicLightColorScheme
 import androidx.compose.material3.lightColorScheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.unit.Dp
+import androidx.compose.ui.unit.dp
 
 private val DarkColorScheme = darkColorScheme(
     primary = Purple80,
@@ -55,4 +57,10 @@ fun MyShopppingListAppTheme(
         typography = Typography,
         content = content
     )
+}
+
+@Composable
+fun calculateAppBarHeight(): Dp {
+    // You can adjust this logic based on your actual app bar content and height
+    return 56.dp // Default app bar height
 }
