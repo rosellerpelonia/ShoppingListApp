@@ -52,28 +52,10 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    // Add your app bar outside of Scaffold
-                    TopAppBar(
-                        title = {
-                            Text(
-                                stringResource(id = R.string.app_name),
-                                maxLines = 1,
-                                overflow = TextOverflow.Ellipsis
-                            )
-                        },
-                        colors = TopAppBarDefaults.smallTopAppBarColors(containerColor = PurpleGrey40)
-                    )
-                    // Wrap your content with Scaffold to include the remaining UI
-                    Scaffold(
-                        modifier = Modifier.padding(top = appBarHeight),
-                        topBar = {
-                            // No need to add the app bar content here
-                        }
-                    ) {
-                        // Your existing content here
-                       ShoppingListApp()
-                    }
+                    // Your existing content here
+                    ShoppingListApp()
                 }
+
             }
         }
     }

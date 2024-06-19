@@ -58,9 +58,3 @@ fun MyShopppingListAppTheme(
         content = content
     )
 }
-
-@Composable
-fun calculateAppBarHeight(): Dp {
-    // You can adjust this logic based on your actual app bar content and height
-    return 56.dp // Default app bar height
-}
