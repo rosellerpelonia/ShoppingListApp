@@ -71,38 +71,10 @@ class MainActivity : ComponentActivity() {
                         }
                     ) {
                         // Your existing content here
-                        var sItems by remember { mutableStateOf(listOf<ShoppingItem>()) }
-                        Column(
-                            modifier = Modifier.fillMaxSize(),
-                            verticalArrangement = Arrangement.Center
-                        ) {
-                            Button(
-                                onClick = {},
-                                modifier = Modifier.align(Alignment.CenterHorizontally)
-                            ) {
-                                Text("Add item")
-                            }
-                            LazyColumn(
-                                modifier = Modifier
-                                    .fillMaxSize()
-                                    .padding(16.dp)
-                            ) {
-                                items(sItems) {
-
-                                }
-                            }
-                        }
+                       ShoppingListApp()
                     }
                 }
             }
         }
     }
 }
-
-
-
-data class ShoppingItem(val id:Int,
-                        var name: String,
-                        var quantity: Int,
-                        var isEditing: Boolean =false
-    )
