@@ -103,7 +103,8 @@ fun ShoppingListApp(){
     }
 
     if(showDialog){
-        AlertDialog(onDismissRequest = { showDialog = false},
+        AlertDialog(
+            onDismissRequest = { showDialog = false},
             confirmButton = {
                             Row (modifier = Modifier
                                 .fillMaxWidth()
